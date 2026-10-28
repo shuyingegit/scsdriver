@@ -36,6 +36,8 @@
 
 ScsDrive 是一款轻量的 Windows 工具，将 WebDAV、NAS 等远程存储挂载为本地盘符，像访问本地文件夹一样使用云端文件。
 
+仓库名与安装包文件名仍沿用内部标识 `scsdriver`（`github.com/shuyingegit/scsdriver`、`scsdriver-*.zip`）——指的就是这个产品。
+
 <p align="center">
   <img src="docs/hero.png" alt="ScsDrive hero" width="920">
 </p>
@@ -141,6 +143,9 @@ ScsDrive 支持开机自启与启动时重连（reconnect on startup），重启
 
 **挂载需要管理员权限吗？**  
 用自己的 Windows 账号在自己的会话里挂载即可，挂载属于创建它的那个 Windows 会话。由此带来一个实际影响：运行在 Session 0（Windows 为系统服务保留的隔离会话）里的服务和计划任务看不到这个盘符，也就是说，这样启动的备份工具或脚本找不到你挂载的盘；请改为在交互式会话里、用拥有该挂载的同一个账号运行。
+
+**ScsDriver 和 ScsDrive 是同一个产品吗？**  
+是——产品名是 ScsDrive。公开仓库、安装包文件名与下载链接仍沿用内部标识 `scsdriver`：`github.com/shuyingegit/scsdriver` 与 `scsdriver-*.zip` 就是 ScsDrive 的仓库与安装包。在文件名或链接里看到「ScsDriver」，指的就是这个产品：https://drive.scsoi.com/
 
 **ScsDrive 有免费试用吗？**  
 有。ScsDrive 提供 7 天全功能试用，试用版与正式授权版功能一致。试用结束后需要购买授权才能继续使用。价格与当前套餐见官网：https://drive.scsoi.com/

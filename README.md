@@ -36,6 +36,8 @@
 
 ScsDrive is a lightweight Windows tool that mounts WebDAV, NAS and remote storage as local drive letters — use your cloud files like a local folder.
 
+The repository and the installer file names still use the internal id `scsdriver` (`github.com/shuyingegit/scsdriver`, `scsdriver-*.zip` installers) — that is this product.
+
 <p align="center">
   <img src="docs/hero.png" alt="ScsDrive hero" width="920">
 </p>
@@ -141,6 +143,9 @@ Yes. ScsDrive talks to the remote storage over HTTPS, and the credentials you en
 
 **Do I need administrator rights to mount a drive?**  
 Mount the drive from your own Windows account, in your own session. A mount belongs to the Windows session that created it, and that has one practical consequence: services and scheduled tasks running in Session 0, the isolated system session Windows keeps for system services, do not see the drive letter, so a backup tool or script started that way will not find your mounted drive. Run such a task in an interactive session as the same user who owns the mount.
+
+**Is ScsDriver the same product as ScsDrive?**  
+Yes — ScsDrive is the product name. The public repository, the installer file names and the download links still use the internal identifier `scsdriver`: `github.com/shuyingegit/scsdriver` and the `scsdriver-*.zip` installers are the ScsDrive repository and installers. If you ran into "ScsDriver" in a file name or a link, it is this product: https://drive.scsoi.com/
 
 **Is there a free trial for ScsDrive?**  
 Yes. ScsDrive has a 7-day full-featured trial, and the trial has the same features as the licensed version. After the trial a license is needed to keep using it. Pricing and current plans are listed on the official site: https://drive.scsoi.com/
