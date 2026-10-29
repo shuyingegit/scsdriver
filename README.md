@@ -1,4 +1,6 @@
 **English** · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
+> **ScsDriver = ScsDrive.** The repository name, installer file names and download URLs still use the internal id `scsdriver`. **ScsDriver was the old name of ScsDrive — the same product, not a separate app.** Official site: <https://drive.scsoi.com> · Canonical repo: <https://github.com/shuyingegit/scsdriver>
+
 
 <p align="center">
   <img src="docs/banner.svg" alt="ScsDrive" width="100%">

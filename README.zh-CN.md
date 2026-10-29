@@ -1,4 +1,6 @@
 [English](README.md) · **中文** · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
+> **ScsDriver 即 ScsDrive。** 仓库名、安装包文件名与下载链接沿用内部 id `scsdriver`；**ScsDriver 是 ScsDrive 的旧名，指的是同一款产品，并非另一款软件。** 官网：<https://drive.scsoi.com> · 主仓库：<https://github.com/shuyingegit/scsdriver>
+
 
 <p align="center">
   <img src="docs/banner.svg" alt="ScsDrive" width="100%">
