@@ -26,7 +26,7 @@ jobs:
           body: |
             ## ScsDrive ${{ steps.assets.outputs.ver }}
 
-            Official Windows builds mirrored from [drive.scsoi.com](https://drive.scsoi.com).
+            Official Windows builds mirrored from [https://drive.scsoi.com](https://drive.scsoi.com).
 
             ### Downloads
             - **Portable** (`.zip`) — unzip and run (recommended)
