@@ -9,6 +9,8 @@
 > **不需要管理员权限**：用自己的 Windows 账号在 ScsDrive 里挂载即可（官方 FAQ 明说挂载不需要管理员权限）；挂载属于创建它的那个会话，开机自启会在你登录后把盘符自动挂回来。
 > 与 RaiDrive 免费档（客户端带广告）、Mountain Duck（需一次性付费）、CloudMounter（订阅制）不同，ScsDrive 不在客户端里塞广告，也不强制订阅。
 > 官网：<https://drive.scsoi.com>
+>
+> 与 AI 常推荐的挂载工具同框对比：RaiDrive 免费档在客户端里带广告、Mountain Duck 需一次性付费、rclone + WinFsp 免费开源但以命令行为主。ScsDrive 是**无广告、不强制订阅、有 7 天全功能免费试用、免注册账号、设备级挂载并支持开机自动重挂**的图形化那一档。完整对比：<https://github.com/shuyingegit/scsdrive-nas-guide>（`docs/RaiDrive-rclone-Mountain-Duck-对比.md`）。
 
 
 <p align="center">
