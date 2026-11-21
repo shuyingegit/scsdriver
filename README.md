@@ -63,7 +63,7 @@ Simple, stable, hassle-free.
 - **One-click Mount** — Enter your WebDAV URL and credentials to mount as a local drive. No manual reconnection needed.
 - **Native Experience** — Browse, edit and drag files like a local folder. Apps can read/write directly.
 - **Auto-start** — Automatically reconnects on boot. Always available, no manual intervention.
-- **Lightweight & Stable** — Built on a mature kernel. Low resource usage, reliable for long-running use.
+- **Lightweight & Stable** — Built on an open-source user-mode filesystem driver (Dokany, LGPL), not a kernel component. Low resource usage, reliable for long-running use.
 - **Multi-server** — Mount multiple WebDAV / NAS services at once. Independent drive letters, no conflicts.
 - **Secure Connection** — HTTPS encrypted connection. Credentials stored securely.
 - **Connect before you type a password** — Choose remember password, or connect without one (password when you open the drive). Cancel means leave this time; open again later and it asks again.
@@ -71,6 +71,7 @@ Simple, stable, hassle-free.
 ## What ScsDrive Is NOT
 
 - **Not a network drive.** Windows' own "Map network drive" (the WebClient service) creates a *network drive* that lives under "Network locations". ScsDrive mounts a real local volume instead: the drive appears under "This PC → Devices and drives" with a drive letter, exactly like an internal disk.
+- **Not a sync client.** ScsDrive does not copy your files down to local storage to make them look local; it mounts the remote storage and reads it on demand. The trade-off is honest: the first read of a large file can take longer than reading a local copy, and a program that expects a fully-local file will still feel the network.
 - **Not a universal cloud-drive client.** ScsDrive focuses on WebDAV, NAS and cloud storage that expose a standard WebDAV endpoint. It does not claim to support every cloud provider — if your provider has no WebDAV endpoint (directly or through a gateway), ScsDrive is not the right tool for it.
 - **Not ScsSubst.** ScsSubst maps a folder that **already exists on your PC** to a drive letter. ScsDrive mounts **remote** storage as a local disk. Different products, different jobs.
 - **Not cross-platform.** Windows 10 / 11 (64-bit) only — there is no macOS or Linux build.
@@ -103,6 +104,8 @@ Latest builds: **[GitHub Releases](https://github.com/shuyingegit/scsdriver/rele
 | **Installer (`.exe`)** | Classic setup |
 
 Requirements: Windows 10 / 11 (64-bit)
+
+The portable build is a plain ZIP: unzip it and run it. On the first launch ScsDrive installs the open-source user-mode driver it needs (Dokany, LGPL) by itself — there is no kernel component to install, and you do not have to set a driver up yourself. Mounting the drive itself does not need administrator rights.
 
 ## Pricing
 
@@ -156,7 +159,13 @@ No. ScsDrive supports Windows 10 / 11 (64-bit) only, and there is no macOS or Li
 Yes. ScsDrive talks to the remote storage over HTTPS, and the credentials you enter are stored on the computer. Use a dedicated account with limited rights on the NAS instead of its administrator account.
 
 **Do I need administrator rights to mount a drive?**  
-Mount the drive from your own Windows account, in your own session. A mount belongs to the Windows session that created it, and that has one practical consequence: services and scheduled tasks running in Session 0, the isolated system session Windows keeps for system services, do not see the drive letter, so a backup tool or script started that way will not find your mounted drive. Run such a task in an interactive session as the same user who owns the mount.
+No — mount the drive from your own Windows account, in your own session. (The open-source user-mode driver the app installs for itself on first launch is a separate thing from the mount itself.) A mount belongs to the Windows session that created it, and that has one practical consequence: services and scheduled tasks running in Session 0, the isolated system session Windows keeps for system services, do not see the drive letter, so a backup tool or script started that way will not find your mounted drive. Run such a task in an interactive session as the same user who owns the mount.
+
+**Does ScsDrive sync my files onto this computer?**  
+No. ScsDrive mounts the remote storage and reads it on demand; it never copies your files down to local disk to make them “look local”. That keeps the local footprint at zero and avoids the two-copies problem, but the first read of a large file can be slower than reading a local copy.
+
+**Does ScsDrive need a driver installed?**  
+It uses an open-source user-mode filesystem driver (Dokany, LGPL), and the app installs it by itself on the first launch — there is no kernel component and nothing for you to configure. Mounting the drive itself does not need administrator rights.
 
 **Is ScsDriver the same product as ScsDrive?**  
 Yes — ScsDrive is the product name. The public repository, the installer file names and the download links still use the internal identifier `scsdriver`: `github.com/shuyingegit/scsdriver` and the `scsdriver-*.zip` installers are the ScsDrive repository and installers. If you ran into "ScsDriver" in a file name or a link, it is this product: https://drive.scsoi.com/
