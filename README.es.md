@@ -49,7 +49,7 @@ Simple, estable, sin complicaciones.
 - **Montaje con un clic** — Introduce tu URL de WebDAV y credenciales para montarlo como unidad local. No hay que reconectar manualmente.
 - **Experiencia nativa** — Navega, edita y arrastra archivos como una carpeta local. Las apps pueden leer/escribir directamente.
 - **Inicio automático** — Se reconecta automáticamente al arrancar. Siempre disponible, sin intervención manual.
-- **Ligero y estable** — Basado en un núcleo maduro. Bajo uso de recursos, fiable durante horas de uso.
+- **Ligero y estable** — Basado en un controlador de sistema de archivos en modo de usuario de código abierto (Dokany, LGPL); no es un componente del núcleo. Bajo uso de recursos, fiable durante horas de uso.
 - **Multi-servidor** — Monta varios servicios WebDAV / NAS a la vez. Letras de unidad independientes, sin conflictos.
 - **Conexión segura** — Conexión cifrada HTTPS. Credenciales almacenadas de forma segura.
 - **Conectar sin escribir la contraseña** — Conectar, también al iniciar, no pide contraseña y la unidad se ve. Si no se recuerda, cada entrada la pide una vez; al salir y volver, otra vez.
