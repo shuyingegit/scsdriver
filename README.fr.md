@@ -49,7 +49,7 @@ Simple, stable, sans tracas.
 - **Montage en un clic** — Entrez votre URL WebDAV et identifiants pour monter en lecteur local. Pas de reconnexion manuelle.
 - **Expérience native** — Naviguez, éditez et glissez-déposez comme un dossier local. Les apps lisent/écrivent directement.
 - **Démarrage automatique** — Se reconnecte automatiquement au démarrage. Toujours disponible, sans intervention manuelle.
-- **Léger et stable** — Basé sur un noyau mature. Faible utilisation des ressources, fiable en continu.
+- **Léger et stable** — Basé sur un pilote de système de fichiers en mode utilisateur open source (Dokany, LGPL) ; ce n'est pas un composant du noyau. Faible utilisation des ressources, fiable en continu.
 - **Multi-serveur** — Montez plusieurs services WebDAV / NAS simultanément. Lettres de lecteur indépendantes, sans conflit.
 - **Connexion sécurisée** — Connexion chiffrée HTTPS. Identifiants stockés en sécurité.
 - **Connecter sans saisir le mot de passe** — La connexion, y compris au démarrage, n’exige pas de mot de passe : le lecteur reste visible. Sans mémorisation, chaque entrée le demande une fois ; en ressortant, il le redemande.
