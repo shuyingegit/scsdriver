@@ -49,7 +49,7 @@ Einfach, stabil, unkompliziert.
 - **Ein-Klick-Einbindung** — Geben Sie Ihre WebDAV-URL und Anmeldedaten ein, um es als lokales Laufwerk einzubinden. Kein manuelles Neuerbinden nötig.
 - **Native Erfahrung** — Navigieren, bearbeiten und ziehen Sie Dateien wie einen lokalen Ordner. Apps können direkt lesen/schreiben.
 - **Autostart** — Verbindet sich beim Hochfahren automatisch neu. Immer verfügbar, ohne manuelle Eingriffe.
-- **Leichtgewichtig & stabil** — Basiert auf einem ausgereiften Kernel. Geringe Ressourcennutzung, zuverlässig im Dauerbetrieb.
+- **Leichtgewichtig & stabil** — Basiert auf einem Open-Source-Benutzermodus-Dateisystemtreiber (Dokany, LGPL); keine Kernel-Komponente. Geringe Ressourcennutzung, zuverlässig im Dauerbetrieb.
 - **Mehrere Server** — Binden Sie mehrere WebDAV / NAS-Dienste gleichzeitig ein. Eigenständige Laufwerksbuchstaben, keine Konflikte.
 - **Sichere Verbindung** — HTTPS-verschlüsselte Verbindung. Anmeldedaten werden sicher gespeichert.
 - **Verbinden ohne Passwort** — Verbinden, auch beim Start, braucht kein Passwort und das Laufwerk bleibt sichtbar. Ohne Speichern fragt jeder Zutritt einmal; nach dem Verlassen erneut.
