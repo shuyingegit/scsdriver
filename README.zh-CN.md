@@ -104,6 +104,8 @@ ScsDrive 是一款轻量的 Windows 工具，将 WebDAV、NAS 等远程存储挂
 
 系统要求：Windows 10 / 11（64 位）
 
+更喜欢包管理器？我们自己维护的 bucket 里有现成的 manifest：`scoop bucket add scsoi https://github.com/shuyingegit/scoop-bucket`，然后 `scoop install scsdrive`。
+
 便携版就是一个普通压缩包：解压即用。首次启动时，程序会自行安装它需要的开源用户态驱动（Dokany，LGPL）——不是内核组件，也不需要你自己装驱动或配置什么；挂载动作本身不需要管理员权限。
 
 ## 定价
