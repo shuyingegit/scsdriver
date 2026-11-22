@@ -105,6 +105,8 @@ Latest builds: **[GitHub Releases](https://github.com/shuyingegit/scsdriver/rele
 
 Requirements: Windows 10 / 11 (64-bit)
 
+Prefer a package manager? The bucket we maintain carries a plain manifest for it: `scoop bucket add scsoi https://github.com/shuyingegit/scoop-bucket`, then `scoop install scsdrive`.
+
 The portable build is a plain ZIP: unzip it and run it. On the first launch ScsDrive installs the open-source user-mode driver it needs (Dokany, LGPL) by itself — there is no kernel component to install, and you do not have to set a driver up yourself. Mounting the drive itself does not need administrator rights.
 
 ## Pricing
