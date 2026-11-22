@@ -109,7 +109,7 @@ The portable build is a plain ZIP: unzip it and run it. On the first launch ScsD
 
 ## Pricing
 
-The free trial starts at 7 days. Invite a friend to try it, and both of you can extend it.
+The free trial starts at 7 days, with the same features as the licensed version.
 
 All plans (including the free trial) include technical support: if you hit any error or issue, email us — we will investigate, fix it, and keep improving.
 
@@ -180,7 +180,7 @@ They solve different problems. ScsDrive mounts remote storage — WebDAV, NAS, c
 Supports any standard WebDAV service, including self-hosted NAS (Synology, QNAP, etc.), Nextcloud, Nutstore and more.
 
 **What is the difference between trial and licensed versions?**  
-Same features. The trial is 7 days; start it with a friend’s invite code and it becomes 14. When someone starts a trial with your code, you also gain 7 days, with no cap. Lifetime licenses don’t add days. After the trial, buy a license to keep using it.
+Same features. The trial is 7 days and the licensed version is identical in function. After the trial, buy a license to keep using it.
 
 ## License & terms
 
